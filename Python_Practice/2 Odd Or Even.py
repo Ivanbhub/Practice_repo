@@ -1,3 +1,6 @@
+# Link to the practice problem : http://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html
+
+
 Number = int(input('What\'s your number? --> '))
 
 if Number % 2 == 0 :
@@ -20,4 +23,4 @@ if Num % Check == 0 :
     print('Congratulations!!,{} divide {} evenly'.format(Check, Num))
     
 else:
-    print('Ooopss, {} cannot divide {} evenly, Try again later!'.format(Check, Num))
+    print('Ooopss, {} cannot divide {} evenly, try again later!'.format(Check, Num))
