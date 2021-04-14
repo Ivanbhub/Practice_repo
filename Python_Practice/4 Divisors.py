@@ -7,6 +7,6 @@ For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)"""
 
 Number = int(input('Please choose a number to divide:--> '))
 
-list=[(x) for x in range(1,45) if Number % x == 0]
+list=[(x) for x in range(1,Number+1) if Number % x == 0]
 
 print(list)
