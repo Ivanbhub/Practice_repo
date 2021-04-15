@@ -1,19 +1,23 @@
-# Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
-word = str(input('What word are we checking today? --> '))
+# Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)
 
-word_split=[]
-#word_reverse=[]
 
-for i in word :
-    word_split.append(i)
+
+rock=1
+paper=2
+scissors=3
+
+player2=0
+player1=0
+
+while player1 not in[1,2,3]:
+    player1 = int(input('''First player, choose one number:1:rock 2: paper 3:scissors --> '''))
+
+while player2 not in[1,2,3]:
+    player2 = int(input('''second player, choose one number:1:rock 2: paper 3:scissors--> '''))
+    continue
+
+if player1==player2:
+    print('it is a tie')
     
-print(word_split)
-
-word_split.reverse()
-print(word_split)
-
-if word_split == word:
-    print('it\'s a palindrome' )
-    
-else:
-    print('Try again')
+if player1==1 and player2 ==2:
+    print('Player2 WINS!!!!!')
