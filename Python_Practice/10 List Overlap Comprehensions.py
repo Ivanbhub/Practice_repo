@@ -20,17 +20,12 @@ for i in range(12):
     x = random.randint(1,50)
     list2.append(x)
     
-    
-    
 print(list1)
 print(list2)
 
 Final_List=[]
-
 #This list will contain elements that are common between the two randomly generated lists
-
 [Final_List.append(y) for y in list1 if y in list2 and y not in Final_List]
-
 print(Final_List)
     
     
