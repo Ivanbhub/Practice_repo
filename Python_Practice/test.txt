@@ -1,2 +1,0 @@
-
-This folder contains practice problems found online. I just work on them to improve my python skills
