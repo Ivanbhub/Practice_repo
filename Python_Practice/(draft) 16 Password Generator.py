@@ -4,17 +4,24 @@ Extra:
 
 Ask the user how strong they want their password to be. For weak passwords, pick a word or two from a list."""
 
+
 import random 
 import string
 
 letters = (string.ascii_letters)
+pw = []
+special_character=['@','#','$','%','&','!']
 
-upper_case = random.choice(letters[26:-1])
-lower_case = random.choice(letters[0:26])
-number= random.randint(0,10)
+for i in range(10):
+    upper_case = random.choice(letters[26:-1])
+    lower_case = random.choice(letters[0:26])
+    number= random.randint(0,10)
+    special_char= random.choice(special_character)
+    pw_generator=[upper_case,lower_case,str(number),special_char]
+    pw.append(random.choice(pw_generator))
 
-print(upper_case)
+    
+    
+random_password = ''.join(pw)
 
-print(lower_case)
-
-print (number)
+print(random_password)
